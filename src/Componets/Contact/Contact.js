@@ -70,9 +70,9 @@ const initialState = {
           <div>
             <section id="contact-form">
               <h1 className="heading">Contact Us</h1>
+              {/* onSubmit={this.handleSubmit} */}
   
-  
-              <form className="myForm" onSubmit={this.handleSubmit} method="post" data-netlify="true" data-netlify-honeypot="bot-field">
+              <form className="myForm"  method="post" data-netlify="true" data-netlify-honeypot="bot-field">
 
                 <div className="formAlignment">
                   <p className="label--center">Name</p>
