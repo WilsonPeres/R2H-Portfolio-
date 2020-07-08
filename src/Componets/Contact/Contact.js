@@ -72,7 +72,7 @@ const initialState = {
               <h1 className="heading">Contact Us</h1>
   
   
-              <form className="myForm" onSubmit={this.handleSubmit} action="POST" data-netlify="true">
+              <form className="myForm" onSubmit={this.handleSubmit} method="POST" data-netlify="true">
 
                 <div className="formAlignment">
                   <p className="label--center">Name</p>
@@ -146,7 +146,7 @@ const initialState = {
                       />
                   </div>
                    
-                  <div>
+                  <div className="recaptchaContainer">
                         <div data-netlify-recaptcha="true"></div>
                   </div>
 
