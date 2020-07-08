@@ -1,0 +1,98 @@
+.contactMaincontainer{
+    background-color: black;
+    width: 94.1vw;
+    height: 100vh;
+    margin-left: 5rem;
+}   
+.heading{
+    text-align: center;
+    color: silver;
+    margin:0px;
+    font-size: 40px;
+  }
+  .myForm {
+    text-align: left;
+    display: flex;
+    margin:auto;
+    flex-flow: column;
+    width: 40%;
+    height: 70vh;
+    margin-top: 30px;
+    padding: 20px 0;
+    border: 2px solid white;
+    border-radius: 15px;
+  }
+  .label--center{
+    margin-left: 10%;  
+    margin-right: 5%;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    width:60px;
+  } 
+  .name--position{
+  width: 50%;
+  height: 20px;
+  padding: 12px 20px;
+  margin: 10px 0px;
+  background: white;
+  border-radius: 15px;
+  }
+  .email--position{
+  width: 50%;
+  height: 20px;
+  padding: 4px 20px;
+  margin: 8px 0px;
+  border-bottom: 2px solid white;
+  background: white;
+  border-radius: 15px;
+  }
+  .Phone--position{
+    width: 50%;
+    height:20px;
+    padding: 4px 20px;
+    margin: 8px 0px;
+    background: white;
+    border-radius: 15px;
+  }
+  .comments--position{
+  padding: 12px 20px;
+  margin: 4px 0px;
+  background: white;
+  border-radius: 15px;
+  width: 50%;
+  height:15vh;
+  }
+  ::placeholder {
+    color:gray;
+  }
+  .button--div{
+      display: flex;
+  }
+  .button--item:hover {
+  background-color: black;
+  color: white;
+  }
+  .button--item{   
+    text-align: center;
+    color: black;
+    background-color: white;
+    margin: auto;
+  }
+.formAlignment{
+    display: flex;
+    flex-direction: row;
+}
+.errorMessage{
+    padding-top: 100px;
+}
+ 
+@media (max-width: 750px) {
+  .myForm {
+    text-align: left;
+    border: none;
+  }
+  .myForm p {
+    margin: 0;
+  }
+}

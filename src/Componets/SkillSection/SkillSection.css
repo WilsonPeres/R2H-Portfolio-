@@ -1,0 +1,89 @@
+.MainSkillContainer{
+    background-color: black;
+    width: 94.1vw;
+    height: 100vh;
+    margin-left: 5rem;
+}
+.h1Skills{
+    padding-top: 20px;
+    margin: auto;
+    font-size: 40px;
+    color:white;
+    text-align: center;
+    height: 20vh;
+}
+.h3Skills{
+    font-size: 18px;
+    padding-top: 12%;
+}
+.SkillContainer{
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.FrontEndContainer{
+    background: linear-gradient(hotpink,red);
+    height: 60vh;
+    width: 32%;
+    border-radius: 50px 0px 0px 50px;
+}
+.ProfessionalContainer{
+    /* background: linear-gradient( purple,#b102199c); */
+    background: linear-gradient(rgb(218, 3, 218), purple);
+    height: 60vh;
+    width: 32%;
+    border-radius: 50px 0px 0px 50px;
+}
+.BackEndContainer{
+    background: linear-gradient( #3784d8,blue);
+    height: 60vh;
+    width: 32%;
+    border-radius: 50px 0px 0px 50px;
+}
+.SkillBox{
+    width: 68%;
+    height:60vh;
+    background-color: white;
+    border-radius: 0px 50px 50px 0px;
+    float: right;
+}
+.UlSkillBox{
+    text-align: left;
+    padding-top: 25%;
+}
+.SkillBox li{
+    color: black;
+    list-style: none;
+
+    margin-bottom: 10%;
+}
+.joinbox{
+    display: flex;
+    flex-direction: row;
+    width: 30%;
+    height:60vh;
+}
+.skillIcons{
+    margin-top: 50%;
+}
+
+@media only screen and (max-width: 500px) {
+    .navbar {
+      bottom: 0;
+      width: 100vw;
+      height: 5rem;
+    }
+    .logo {
+    }
+  
+    .navbar-nav {
+      flex-direction: row;
+    }
+  
+    .nav-link {
+      justify-content: center;
+    }
+}
