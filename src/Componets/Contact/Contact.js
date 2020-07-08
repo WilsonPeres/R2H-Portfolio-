@@ -146,9 +146,9 @@ const initialState = {
                       />
                   </div>
                    
-                  <div className="recaptchaContainer">
+                  {/* <div className="recaptchaContainer"> */}
                         <div data-netlify-recaptcha="true"></div>
-                  </div>
+                  {/* </div> */}
 
                 <button className="button--item" type="submit" value="Send Message">submit</button>
               </form>
