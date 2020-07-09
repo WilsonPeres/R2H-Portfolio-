@@ -1,9 +1,9 @@
 import React from 'react';
 import './Contact.css';
-// import axios from 'axios';
+import axios from 'axios';
 
 
-// // Intializing the state to default nothing
+// Intializing the state to default nothing
 // const initialState = {
 //     name: "",
 //     email: "",
@@ -158,36 +158,69 @@ import './Contact.css';
 //       );
 //     }
 //   }
-
-
-const ContactPage = () => {
- 
-        return (
-         
-            <div id="contact-wrapper">
-                <div className="contact-container">
-        <div className="contact-form-data">
-            <form name="contact" method="POST" data-netlify="true">
-                <div className="logo">
-                    <img src="img/Instagram.png" alt="instagram" />
-                            </div>
-                            <input type="hidden" name="form-name" value="contact" />
-                <input type="text" name="name" placeholder="Enter first and last name" required/>
-                <input type="text" name="email" placeholder="Username or email" required />
-                            <textarea className="textarea" type="text" name="message" placeholder="Leave us a message :)" required />
-                            <button className="contact-form-btn" type="submit">Submit</button>
-                        
-            
-           
-                        </form>
-                       
-    </div>
-            </div>
-           
-            </div>
-                
-          
-        )
-    }
   
-  export default ContactPage;
+//   export default ContactPage;
+
+
+
+
+const encode = (data) => {
+  return Object.keys(data)
+      .map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
+      .join("&");
+}
+
+class ContactPage extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = { name: "", email: "", message: "" };
+  }
+
+  /* Here’s the juicy bit for posting the form submission */
+
+  handleSubmit = e => {
+    fetch("/", {
+      method: "POST",
+      headers: { "Content-Type": "application/x-www-form-urlencoded" },
+      body: encode({ "form-name": "contact", ...this.state })
+    })
+      .then(() => alert("Success!"))
+      .catch(error => alert(error));
+
+    e.preventDefault();
+  };
+
+  handleChange = e => this.setState({ [e.target.name]: e.target.value });
+
+  render() {
+    const { name, email, message } = this.state;
+    return (
+        <div className="contactMaincontainer">
+      <form className="myForm"onSubmit={this.handleSubmit}>
+        <p>
+          <label>
+            Your Name: <input type="text" name="name" value={name} onChange={this.handleChange} />
+          </label>
+        </p>
+        <p>
+          <label>
+            Your Email: <input type="email" name="email" value={email} onChange={this.handleChange} />
+          </label>
+        </p>
+        <p>
+          <label>
+            Message: <textarea name="message" value={message} onChange={this.handleChange} />
+          </label>
+        </p>
+        <p>
+          <button type="submit">Send</button>
+        </p>
+      </form>
+      </div>
+    );
+  }
+}
+export default ContactPage;
+
+// ReactDOM.render(<ContactPage />, document.getElementById("root"));
+
