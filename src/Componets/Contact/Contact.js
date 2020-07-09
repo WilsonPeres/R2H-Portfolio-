@@ -13,7 +13,6 @@ const encode = (data) => {
 const initialState = {
     name: "",
     email: "",
-    phonenumber: "",
     message: "",
   };
   
@@ -35,7 +34,6 @@ const initialState = {
     validate = () => {
       let nameError = "";
       let emailError = "";
-      let phonenumberError = "";
       let messageError = "";
   
       if (!this.state.name) {
@@ -45,14 +43,12 @@ const initialState = {
       if (!this.state.email.includes("@")) {
         emailError = "*invalid Email";
       }
-      if (!this.state.phonenumber) {
-        phonenumberError = "* Missing Phone Number";
-      }
+    
       if (!this.state.message) {
         messageError = "* Missing a Message";
       }
-      if (emailError || nameError || phonenumberError || messageError) {
-        this.setState({ emailError, nameError, phonenumberError, messageError });
+      if (emailError || nameError || messageError) {
+        this.setState({ emailError, nameError, messageError });
         return false;
       }
       return true;
@@ -68,6 +64,9 @@ const initialState = {
     //   }
     // };
 handleSubmit = e => {
+  e.preventDefault();
+      const isValid = this.validate();
+      if (isValid) {
   fetch("/", {
     method: "POST",
     headers: { "Content-Type": "application/x-www-form-urlencoded" },
@@ -77,6 +76,7 @@ handleSubmit = e => {
     .catch(error => alert(error));
 
   e.preventDefault();
+}
 };
 
 handleChange = e => this.setState({ [e.target.name]: e.target.value });
@@ -112,25 +112,25 @@ handleChange = e => this.setState({ [e.target.name]: e.target.value });
                   <p className="label--center">Email Address</p>
                   <input
                     className="name--position"
-                    name={email}
+                    name="email"
                     type="email"
                     placeholder="Email"
-                    value={this.state.email}
+                    value={email}
                     onChange={this.handleChange}
                   />
-                  <div style={{ color: "red", fontSize: "14px" }}>
-                    {this.state.phonenumberError}
-                  </div>
+                    <div className="emailError" style={{ color: "red", fontSize: "14px" }}>
+                      {this.state.emailError}
+                    </div>
                   </div>
   
                   <div className="formAlignment">
                     <p className="label--center">Message</p>
                     <textarea
                       className="comments--position"
-                      name={message}
+                      name="message"
                       type="text"
                       placeholder="Message"
-                      value={this.state.message}
+                      value={message}
                       onChange={this.handleChange}
                     />
                     <div className="errorMessage" style={{ color: "red", fontSize: "14px" }}>
