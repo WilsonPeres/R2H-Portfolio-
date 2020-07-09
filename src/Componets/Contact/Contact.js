@@ -73,7 +73,7 @@ const initialState = {
               {/* onSubmit={this.handleSubmit} */}
   
               <form className="myForm"  name="contact v1" method="post" data-netlify="true" onSubmit="submit">
-
+                <input type="hidden"  name="form-name" value="contact v1"/>
                 <div className="formAlignment">
                   <p className="label--center">Name</p>
                   <input
