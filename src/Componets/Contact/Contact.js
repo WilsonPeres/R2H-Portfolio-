@@ -215,7 +215,7 @@ const encode = (data) => {
   }
   export default ContactPage;
 
-  ReactDOM.render(<ContactForm />, document.getElementById("root"));
+  ReactDOM.render(<ContactPage />, document.getElementById("root"));
 
 
  
