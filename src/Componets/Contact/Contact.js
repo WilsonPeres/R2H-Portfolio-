@@ -87,16 +87,17 @@ handleChange = e => this.setState({ [e.target.name]: e.target.value });
       return (
   
         <div className="contactMaincontainer">
-        
-          <div>
+
             <section id="contact-form">
+            <div className="H1Container">
               <h1 className="heading">Contact Us</h1>
-              {/* onSubmit={this.handleSubmit} */}
+            </div>
+              
   
               <form className="myForm" onSubmit={this.handleSubmit}>
                 <input type="hidden"  name="form-name" value="contact v1"/>
                 <div className="formAlignment">
-                  <p className="label--center">Name</p>
+                  <p className="label--center">Name:</p>
                   <input
                     className="name--position"
                     type="text" name="name" value={name} onChange={this.handleChange}
@@ -109,7 +110,7 @@ handleChange = e => this.setState({ [e.target.name]: e.target.value });
                 </div>
 
                 <div className="formAlignment">
-                  <p className="label--center">Email Address</p>
+                  <p className="label--center">Email:</p>
                   <input
                     className="name--position"
                     name="email"
@@ -124,7 +125,7 @@ handleChange = e => this.setState({ [e.target.name]: e.target.value });
                   </div>
   
                   <div className="formAlignment">
-                    <p className="label--center">Message</p>
+                    <p className="label--center">Message:</p>
                     <textarea
                       className="comments--position"
                       name="message"
@@ -138,7 +139,7 @@ handleChange = e => this.setState({ [e.target.name]: e.target.value });
                     </div>
                   </div>
 
-                  <div>
+                  <div className="formAlignment">
                       <input 
                       type="file"
                       className="myFile"
@@ -147,78 +148,15 @@ handleChange = e => this.setState({ [e.target.name]: e.target.value });
                       rows="7"
                       />
                   </div>
-                   
-                  {/* <div className="recaptchaContainer"> */}
-                        {/* <div data-netlify-recaptcha="true"></div> */}
-                  {/* </div> */}
-
+                  
                 <button className="button--item" type="submit" >submit</button>
               </form>
             </section>
           </div>
-        </div>
       );
     }
   }
 
-
-
-
-// const encode = (data) => {
-//     return Object.keys(data)
-//         .map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
-//         .join("&");
-//   }
-
-//   class ContactPage extends React.Component {
-//     constructor(props) {
-//       super(props);
-//       this.state = { name: "", email: "", message: "" };
-//     }
-
-//     /* Here’s the juicy bit for posting the form submission */
-
-//     handleSubmit = e => {
-//       fetch("/", {
-//         method: "POST",
-//         headers: { "Content-Type": "application/x-www-form-urlencoded" },
-//         body: encode({ "form-name": "contact", ...this.state })
-//       })
-//         .then(() => alert("Success!"))
-//         .catch(error => alert(error));
-
-//       e.preventDefault();
-//     };
-
-//     handleChange = e => this.setState({ [e.target.name]: e.target.value });
-
-//     render() {
-//       const { name, email, message } = this.state;
-//       return (
-//         <form onSubmit={this.handleSubmit}>
-
-//           <p>
-//             <label>
-//               Your Name: <input type="text" name="name" value={name} onChange={this.handleChange} />
-//             </label>
-//           </p>
-//           <p>
-//             <label>
-//               Your Email: <input type="email" name="email" value={email} onChange={this.handleChange} />
-//             </label>
-//           </p>
-//           <p>
-//             <label>
-//               Message: <textarea name="message" value={message} onChange={this.handleChange} />
-//             </label>
-//           </p>
-//           <p>
-//             <button type="submit">Send</button>
-//           </p>
-//         </form>
-//       );
-//     }
-//   }
   export default ContactPage;
 
   ReactDOM.render(<ContactPage />, document.getElementById("root"));
