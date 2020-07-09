@@ -196,7 +196,7 @@ class ContactPage extends React.Component {
     const { name, email, message } = this.state;
     return (
         <div className="contactMaincontainer">
-      <form className="myForm"onSubmit={this.handleSubmit}>
+      <form className="myForm"onSubmit={this.handleSubmit} form-name="contact">
         <p>
           <label>
             Your Name: <input type="text" name="name" value={name} onChange={this.handleChange} />
