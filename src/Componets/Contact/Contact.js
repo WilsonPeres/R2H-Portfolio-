@@ -54,15 +54,6 @@ const initialState = {
       return true;
     };
   
-    // handleSubmit = event => {
-    //   // stops browers from posting and reloading page
-    //   event.preventDefault();
-    //   const isValid = this.validate();
-    //   if (isValid) {
-    //     // clear form : in production this is where email is sent then clears 
-    //     this.setState(initialState);
-    //   }
-    // };
 handleSubmit = e => {
   e.preventDefault();
       const isValid = this.validate();
@@ -90,7 +81,7 @@ handleChange = e => this.setState({ [e.target.name]: e.target.value });
 
             <section id="contact-form">
             <div className="H1Container">
-              <h1 className="heading">Contact Us</h1>
+              <h1 className="heading">Contact Me</h1>
             </div>
               
   

@@ -5,10 +5,10 @@
     margin-left: 5rem;
 }   
 .H1Container{
-  background: linear-gradient(#FFDD00,#FBB034
-  );
-  width: 35.5%;
+  background: linear-gradient(#FFDD00,#FBB034);
+  width: 35%;
   height: 14vh;
+  border: 2px solid #FBB034;
   border-radius: 50px 50px 0px 0px;
   margin: auto;
 }

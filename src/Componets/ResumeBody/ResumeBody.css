@@ -1,0 +1,66 @@
+.ResumeBodyContainer{
+    width: 94.2vw;
+    margin-left: 5rem;
+    background-color: black;
+    color: white;
+}
+.ResumeHeading{
+
+}
+.ResumeMainContainer{
+    width: 80%;
+    margin: auto;
+}
+.TitleBox{
+background-color: teal;
+width:35%;
+text-align: center;
+font-size: large;
+text-align: left;
+padding-left: 10%;
+}
+
+
+.InfoResumeBox{
+    background-color: white;
+    width: 70%;
+    text-align: left;
+    padding-left: 5%;
+    padding-right: 10%;
+}
+.Objective{
+    width:100%;
+    height:15vh;
+    color: black;
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+}
+.Eductaion{
+    width:100%;
+    height:15vh;
+    color: black;
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+}
+.Skills{
+    width:100%;
+    height:20vh;
+    color: black;
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+}
+.WorkExp{
+    width:100%;
+    display: flex;
+    flex-direction: row;
+    color: black;
+    background-color: white;
+}
+.ResumeDates{
+    font-style: italic;
+    font-weight: lighter;
+    font-size: 12px;
+}
