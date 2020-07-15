@@ -1,16 +1,17 @@
 import React from 'react';
+import Hero from "./Componets/Hero/Hero";
 import NavBar from "./Componets/NavBar/NavBar";
 import Footer from "./Componets/Footer/Footer";
-import ResumeBody from "./Componets/ResumeBody/ResumeBody";
+import Contact from "./Componets/Contact/Contact";
 
-function ResumePage() {
+function ContactPage() {
   return (
     <div className="">
       <NavBar/>
-      <ResumeBody/>
+      <Contact/>
       <Footer/>
     </div>
   );
 }
 
-export default ResumePage;
+export default ContactPage;

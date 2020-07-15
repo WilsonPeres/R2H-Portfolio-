@@ -1,15 +1,16 @@
 import React from "react";
 import './ResumeBody.css';
 
-
 function ResumeBody() {
     return (
       <div className="ResumeBodyContainer">
 
-          <div className="ResumeHeading">
-                <p>lkdlwkmdlkem</p>
-          </div>
+
         <div className="ResumeMainContainer">
+        <div className="ResumeHeading">
+               <h1> Wilson Peres Resume</h1>
+               <h3> Wilsonperez704@Gmail.com</h3>
+          </div>
           <div className="Objective">
               <div className="TitleBox">
                 <h2>Objective:</h2>
@@ -20,7 +21,6 @@ function ResumeBody() {
                 </p>
                 </div>
           </div>
-
           <div className="Eductaion">
           <div className="TitleBox">
               <h2>Eductaion:</h2>
@@ -72,7 +72,7 @@ function ResumeBody() {
 
               <h3>Dtown Wireless, Sales Associate/Manager, Charlotte NC </h3>
               <p className="ResumeDates">November 2016 - October 2017</p>
-              <p>November 2014 - April 2016 </p>
+              <p className="ResumeDates">November 2014 - April 2016 </p>
               <ul>
                   <li>Managed the store according to the owner's standards</li>
                   <li>Cashier; tendered money, preformed daily end of day cash out</li>

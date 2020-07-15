@@ -3,6 +3,7 @@
     height:100vh;
     position: fixed;
     background-color: navy;
+   
 }
 .navbar-nav{
     list-style: none;
@@ -32,10 +33,12 @@
     height: 5rem;
     color: var(--text-primary);
     text-decoration: none;
+   
 }
 .link-text{
     display:none;
     margin-left: 1rem;
+    cursor: pointer;
 }
 .nav-link i{
     min-width: 2rem;

@@ -1,7 +1,7 @@
 .HeroContainer{
     background: url('./HeroBackground.gif');
     width: 94.2vw;
-    height: 80vh;
+    height: 100vh;
     background-repeat: no-repeat;
     background-size: cover;
     display: flex;

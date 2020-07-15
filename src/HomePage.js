@@ -5,9 +5,8 @@ import SkillSection from "./Componets/SkillSection/SkillSection";
 import ContactPage from "./Componets/Contact/Contact";
 import Footer from "./Componets/Footer/Footer";
 import Personas from "./Componets/Persona/Persona";
-import ResumeBody from "./Componets/ResumeBody/ResumeBody"
 
-function App() {
+function HomePage() {
   return (
     <div className="">
       <NavBar/>
@@ -16,9 +15,8 @@ function App() {
       <Personas/>
       <ContactPage/>
       <Footer/>
-      <ResumeBody/>
     </div>
   );
 }
 
-export default App;
+export default HomePage;

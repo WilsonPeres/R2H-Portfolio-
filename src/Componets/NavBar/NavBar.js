@@ -4,37 +4,52 @@ import PersonIcon from "./icons/businessman.png";
 import SkillIcon from "./icons/innovation.png" ;
 import ProjectIcon from "./icons/file.png";
 import Contacticon from "./icons/contact.png";
+import NavigationItem from "./navigationItem";
 
-function NavBar() {
+import {Link} from 'react-scroll';
+
+function NavBar(props) {
     return (
       <div className="NavContainer">
         <nav className="navbar">
             <ul className="navbar-nav">
 
+            <NavigationItem link="/">
                 <li className="nav-item">
-                    <img className="IconImg" src={PersonIcon}/>
-                    <a className="nav-link">
-                        <span className="link-text">Home</span>
+                    <img className="IconImg" src={PersonIcon} alt="Icon"/>
+                    <a href={props.link} className="nav-link" target="_blank" rel="noopener noreferrer">
+                        <span className="link-text">Home {props.children}</span>
                     </a>
                 </li>
+                </NavigationItem>
+
+                < NavigationItem link="/ResumePage" >
                 <li className="nav-item">
-                    <img className="IconImg"  src={SkillIcon}/>
-                    <a className="nav-link">
-                        <span className="link-text">Skills</span>
+                    <img className="IconImg"  src={SkillIcon} alt="Icon"/>
+                    <a href={props.link}  className="nav-link" target="_blank" rel="noopener noreferrer">
+                        <span className="link-text">Resume {props.children}</span>
                     </a>
                 </li>
+                </NavigationItem>
+
+                <NavigationItem link="/PortfolioPage" >
                 <li className="nav-item">
-                    <img className="IconImg"  src={ProjectIcon} />
-                    <a className="nav-link">
-                        <span className="link-text">Projects</span>
+                    <img className="IconImg"  src={ProjectIcon} alt="Icon"/>
+                    <a href={props.link}  className="nav-link" target="_blank" rel="noopener noreferrer">
+                        <span className="link-text">Projects {props.children}</span>
                     </a>
                 </li>
+                </NavigationItem>
+
+                <NavigationItem link="/ContactPage" >
                 <li className="nav-item">
-                    <img className="IconImg"  src={Contacticon}/>
-                    <a className="nav-link">
+                    <img className="IconImg"  src={Contacticon} alt="Icon"/>
+                <span className="link-text">Contact</span>
+                    {/* <a className="nav-link">
                         <span className="link-text">Contact</span>
-                    </a>
+                    </a> */}
                 </li>
+                </NavigationItem>
             </ul>
 
         </nav>

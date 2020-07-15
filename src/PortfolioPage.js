@@ -1,16 +1,16 @@
 import React from 'react';
+import PortfolioBody from './Componets/Portfolio/PortfolioBody'
 import NavBar from "./Componets/NavBar/NavBar";
 import Footer from "./Componets/Footer/Footer";
-import ResumeBody from "./Componets/ResumeBody/ResumeBody";
 
-function ResumePage() {
+function PortfolioPage() {
   return (
     <div className="">
       <NavBar/>
-      <ResumeBody/>
+      <PortfolioBody/>
       <Footer/>
     </div>
   );
 }
 
-export default ResumePage;
+export default PortfolioPage;
