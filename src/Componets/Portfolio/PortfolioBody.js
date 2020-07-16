@@ -22,89 +22,201 @@ class PortfolioBody extends React.Component {
      
             <div className="CardMaincontainer">
                 <div className="IMGInfoContainer">
-                    <div className="CardIMG">
-
-                    </div>
                     <div className="CardInfo">
                         <h2>R2H Gateway Project</h2>
-                        <h4>Languages Used</h4>
-                        <ul>
-                            <li>Html</li>
-                            <li>CSS</li>
-                        </ul>
-                        <button> Githhub</button>
-                        <button> launch Site</button>
+                        <h4>Languages</h4>
+                        <p>HTML & CSS</p>
+                    <div className="CardButtonBox">
+                        <a href="https://github.com/WilsonPeres/Gateway-Spain-Project" className="LaunchButton">GitHub</a>
+                        <a href="https://gracious-perlman-b1d404.netlify.app/" className="LaunchButton">WebSite</a>
+                    </div>
 
                     </div>
-                </div>
-                <div className="CardButtonConatiner">
-                    <button> Githhub</button>
-                    <button> launch Site</button>
-                </div>
-            </div>
-
-
-            <div className="CardMaincontainer">
-                <div className="IMGInfoContainer">
                     <div className="CardIMG">
-
+                        <img src="/images/Gateway.png"/>
                     </div>
-                    <div className="CardInfo">
-                        <h2>Title of Project</h2>
-                        <h4>Languages Used</h4>
-                        <ul>
-                            <li>Html</li>
-                            <li>CSS</li>
-                        </ul>
-                        <button> Githhub</button>
-                        <button> launch Site</button>
-                    </div>
-                </div>
-                <div className="CardButtonConatiner">
                 </div>
             </div>
 
 
             <div className="CardMaincontainer">
                 <div className="IMGInfoContainer">
+                    <div className="CardInfo">
+                        <h2>Clock</h2>
+                        <h4>Languages</h4>
+                        <p>HTML CSS Javascript</p>
+                    <div className="CardButtonBox">
+                        <a href="https://github.com/WilsonPeres/Clock" className="LaunchButton">GitHub</a>
+                        <a href="https://sharp-ptolemy-c041dc.netlify.app/" className="LaunchButton">WebSite</a>
+                    </div>
+
+                    </div>
+                    <div className="CardIMG">
+                        <img src="/images/Clock.png"/>
+                    </div>
+                </div>
+            </div>
+
+
+            <div className="CardMaincontainer">
+                <div className="IMGInfoContainer">
+                    <div className="CardInfo">
+                        <h2>Speech Recognition App</h2>
+                        <h4>Languages</h4>
+                        <p>HTML CSS Javascript</p>
+                    <div className="CardButtonBox">
+                        <a href="https://github.com/WilsonPeres/Speech-recognization-app" className="LaunchButton">GitHub</a>
+                        <a href="https://determined-mahavira-dbc4a2.netlify.app/" className="LaunchButton">WebSite</a>
+                    </div>
+
+                    </div>
+                    <div className="CardIMG">
+                        <img src="/images/SpeechApp.png"/>
+                    </div>
+                </div>
+            </div>
+
+
+            <div className="CardMaincontainer">
+                <div className="IMGInfoContainer">
+                    <div className="CardInfo">
+                        <h2>Tic Tac Toe</h2>
+                        <h4>Languages</h4>
+                        <p>HTML CSS  Javascript</p>
+                    <div className="CardButtonBox">
+                        <a href="https://github.com/WilsonPeres/Tic-Tac-Toe-Game" className="LaunchButton">GitHub</a>
+                        <a href="https://wilsonptictactoegame.netlify.app/" className="LaunchButton">WebSite</a>
+                    </div>
+
+                    </div>
+                    <div className="CardIMG">
+                        <img src="/images/TicTacToe.png"/>
+                    </div>
+                </div>
+            </div>
+
+
+            <div className="CardMaincontainer">
+                <div className="IMGInfoContainer">
+                    <div className="CardInfo">
+                        <h2>Ecommerce Project</h2>
+                        <h4>Languages</h4>
+                        <p>React CSS Javascript</p>
+                    <div className="CardButtonBox">
+                        <a href="https://github.com/WilsonPeres/ReactEcommerceProject" className="LaunchButton">GitHub</a>
+                        <a href="https://ellaguneroclt.netlify.app/" className="LaunchButton">WebSite</a>
+                    </div>
+
+                    </div>
+                    <div className="CardIMG">
+                        <img src="/images/ElLagunero.png"/>
+                    </div>
+                </div>
+            </div>
+
+
+            <div className="CardMaincontainer">
+                <div className="IMGInfoContainer">
+                    <div className="CardInfo">
+                        <h2>Github Card Finder</h2>
+                        <h4>Languages</h4>
+                        <p>Node.JS & CSS</p>
+                    <div className="CardButtonBox">
+                        <a href="https://github.com/WilsonPeres/ReactEcommerceProject" className="LaunchButton">GitHub</a>
+                        <a href="https://ellaguneroclt.netlify.app/" className="LaunchButton">WebSite</a>
+                    </div>
+
+                    </div>
+                    <div className="CardIMG">
+                        <img src="/images/GithubCard.png"/>
+                    </div>
+                </div>
+            </div>
+
+
+            <div className="CardMaincontainer">
+                <div className="IMGInfoContainer">
+                    <div className="CardInfo">
+                        <h2>Samsung Redesign Project</h2>
+                        <h4>Languages</h4>
+                        <p>React MySQL Node.JS CSS</p>
+                    <div className="CardButtonBox">
+                        <a href="https://github.com/LeCoding-tech/Redesign-team-9" className="LaunchButton">GitHub</a>
+                        <a href="https://redesign-team-9.netlify.app/" className="LaunchButton">WebSite</a>
+                    </div>
+                    </div>
+                    <div className="CardIMG">
+                        <img src="/images/SamsungOne.png"/>
+                    </div>
+                </div>
+            </div>
+
+
+            <div className="CardMaincontainer">
+                <div className="IMGInfoContainer">
+                    <div className="CardInfo">
+                        <h2>To Do List</h2>
+                        <h4>Languages</h4>
+                        <p> Html CSS Javascript</p>
+                    <div className="CardButtonBox">
+                        <a href="https://github.com/WilsonPeres/Challange-" className="LaunchButton">GitHub</a>
+                        <a href="https://angry-hodgkin-76926e.netlify.app/" className="LaunchButton">WebSite</a>
+                    </div>
+                    </div>
+                    <div className="CardIMG">
+                        <img src="/images/ToDoList.png"/>
+                    </div>
+                </div>
+            </div>
+
+
+            <div className="CardMaincontainer">
+                <div className="IMGInfoContainer">
+                    <div className="CardInfo">
+                        <h2> 5 Day Forecast Weather App</h2>
+                        <h4>Languages Used</h4>
+                        <p> Node.JS CSS React</p>
+                        <div className="CardButtonBox">
+                            <a href="https://github.com/WilsonPeres/5Day-Weather-App-" className="LaunchButton">GitHub</a>
+                        </div>
+                    </div>
                     <div className="CardIMG">
                     <Slider {...settings}>
                         <div>
-                            <img className="SlideImage" src="/images/Gatewayone.png"/>
+                            <img className="SlideImage" src="/images/WeatherOne.png"/>
                         </div>
                         <div>
-                        <img className="SlideImage" src="/images/Gateway2.png"/>
+                        <img className="SlideImage" src="/images/WeatherTwo.png"/>
                         </div>
                         <div>
-                        <img className="SlideImage" src="/images/Gateway3.png"/>
-                        </div>
-                        <div>
-                        <img className="SlideImage" src="/images/Gateway4.png"/>
+                        <img className="SlideImage" src="/images/WeatherThree.png"/>
                         </div>
                     </Slider>
-
                     </div>
-                    <div className="CardInfo">
-                        <h2>R2H Gateway Project</h2>
-                        <h4>Languages Used</h4>
-                        <ul>
-                            <li>Html</li>
-                            <li>CSS</li>
-                        </ul>
-                        <button> Githhub</button>
-                        <button> launch Site</button>
-
-                    </div>
-                </div>
-                <div className="CardButtonConatiner">
-                    <button> Githhub</button>
-                    <button> launch Site</button>
                 </div>
             </div>
 
-     
-     
-     
+
+            <div className="CardMaincontainer">
+                <div className="IMGInfoContainer">
+                    <div className="CardInfo">
+                        <h2>Hope Hackathon</h2>
+                        <h4>Languages Used</h4>
+                        <p> Node.JS CSS Postman</p>
+                        <div className="CardButtonBox">
+                            <a href="https://github.com/codyg7/Hopehackathon" className="LaunchButton">GitHub</a>
+                        </div>
+                    </div>
+                    <div className="CardIMG">
+                    <Slider {...settings}>
+                        <img className="SlideImage" src="/images/WackOne.png"/>
+                        <img className="SlideImage" src="/images/WackTwo.png"/>
+                        <img className="SlideImage" src="/images/WackThree.png"/>    
+                    </Slider>
+                    </div>
+                </div>
+            </div>
+
       </div>
      </div> 
       </>
