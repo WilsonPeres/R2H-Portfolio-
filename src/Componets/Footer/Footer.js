@@ -15,6 +15,7 @@ function Footer() {
         </a>
        
         </div>
+        <p> &copy; 2020 WilsonProductions</p>
       </div>
     );
   }

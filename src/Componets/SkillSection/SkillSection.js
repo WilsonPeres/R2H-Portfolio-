@@ -52,7 +52,6 @@ function SkillSection() {
                   <li>Problem Solving</li>
                   <li>Interview Prep</li>
                   <li>Public Speaking</li>
-                  <ll>Time Management</ll>
                   </ul>
               </div>  
               </div> 
@@ -61,5 +60,4 @@ function SkillSection() {
       </div>
     );
   }
-  
   export default SkillSection;

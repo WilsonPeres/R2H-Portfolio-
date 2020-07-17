@@ -3,7 +3,6 @@
     height:100vh;
     position: fixed;
     background-color: navy;
-   
 }
 .navbar-nav{
     list-style: none;
@@ -44,14 +43,7 @@
     min-width: 2rem;
     margin:0 1.5rem
 }
-.navbar:hover{
-    width: 16rem;
-    border-radius: 0 100% 100% 0;
-}
-.navbar:hover .link-text{
-    display: block;
-    margin-top: 15px;
-}
+
 .link-text {
     display: none;
     margin-left: 1rem;
@@ -61,5 +53,38 @@
     width: 50px;
 }  
 
+@media (min-width: 600px) {
+    .navbar:hover{
+        width: 16rem;
+        border-radius: 0 100% 100% 0;
+    }
+    .navbar:hover .link-text{
+        display: block;
+        margin-top: 15px;
+    }
+ }
+
+@media only screen and (max-width: 600px) {
+    .navbar {
+        bottom: 0;
+        width: 100%;
+        height:15vh;
+    }
+  
+    .navbar-nav {
+        padding-top: 5%;
+        display: flex; 
+        flex-direction: row;
+        margin: auto ;
+        justify-content: space-evenly;
+    }
+  
+    .nav-link {
+        justify-content: center;
+    }
+    /* .link-text{
+        : ;
+    } */
+}
 
   

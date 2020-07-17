@@ -6,7 +6,6 @@ import ProjectIcon from "./icons/file.png";
 import Contacticon from "./icons/contact.png";
 import NavigationItem from "./navigationItem";
 
-import {Link} from 'react-scroll';
 
 function NavBar(props) {
     return (

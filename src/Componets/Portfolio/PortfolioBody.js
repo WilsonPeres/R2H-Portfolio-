@@ -1,7 +1,5 @@
 import React from "react";
 import './Portfolio.css';
-// import "~slick-carousel/slick/slick.css"; 
-// import "~slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
 
 
@@ -12,10 +10,16 @@ class PortfolioBody extends React.Component {
             infinite: true,
             speed: 500,
             slidesToShow: 1,
-            slidesToScroll: 1
+            slidesToScroll: 1,
+            autoplay: true,
+            adaptiveHeight: true,
+            className:"SliderSetting",
           };
       return <>
      <div className="PortMainContainer"> 
+          <div className="H1PortfolioBox">
+            <h1 className="H1Portfolio" >My Portfolio</h1>
+          </div>
          <div className="CardSection">
 
     
@@ -23,7 +27,7 @@ class PortfolioBody extends React.Component {
             <div className="CardMaincontainer">
                 <div className="IMGInfoContainer">
                     <div className="CardInfo">
-                        <h2>R2H Gateway Project</h2>
+                        <h2> Gateway Project</h2>
                         <h4>Languages</h4>
                         <p>HTML & CSS</p>
                     <div className="CardButtonBox">
@@ -173,7 +177,7 @@ class PortfolioBody extends React.Component {
             <div className="CardMaincontainer">
                 <div className="IMGInfoContainer">
                     <div className="CardInfo">
-                        <h2> 5 Day Forecast Weather App</h2>
+                        <h2> Weather App</h2>
                         <h4>Languages Used</h4>
                         <p> Node.JS CSS React</p>
                         <div className="CardButtonBox">
@@ -181,17 +185,11 @@ class PortfolioBody extends React.Component {
                         </div>
                     </div>
                     <div className="CardIMG">
-                    <Slider {...settings}>
-                        <div>
+                        <Slider {...settings}>
                             <img className="SlideImage" src="/images/WeatherOne.png"/>
-                        </div>
-                        <div>
-                        <img className="SlideImage" src="/images/WeatherTwo.png"/>
-                        </div>
-                        <div>
-                        <img className="SlideImage" src="/images/WeatherThree.png"/>
-                        </div>
-                    </Slider>
+                            <img className="SlideImage" src="/images/WeatherTwo.png"/>
+                            <img className="SlideImage" src="/images/WeatherThree.png"/>
+                        </Slider>
                     </div>
                 </div>
             </div>
@@ -208,11 +206,11 @@ class PortfolioBody extends React.Component {
                         </div>
                     </div>
                     <div className="CardIMG">
-                    <Slider {...settings}>
-                        <img className="SlideImage" src="/images/WackOne.png"/>
-                        <img className="SlideImage" src="/images/WackTwo.png"/>
-                        <img className="SlideImage" src="/images/WackThree.png"/>    
-                    </Slider>
+                        <Slider {...settings}>
+                            <img className="SlideImage" src="/images/WackOne.png"/>
+                            <img className="SlideImage" src="/images/WackTwo.png"/>
+                            <img className="SlideImage" src="/images/WackThree.png"/>    
+                        </Slider>
                     </div>
                 </div>
             </div>

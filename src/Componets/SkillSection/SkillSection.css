@@ -70,20 +70,45 @@
     margin-top: 50%;
 }
 
-@media only screen and (max-width: 500px) {
-    .navbar {
-      bottom: 0;
-      width: 100vw;
-      height: 5rem;
+@media only screen and (max-width: 600px) {
+    .MainSkillContainer{
+        width: 100vw;
+        height: auto;
+        margin-left: 0rem;
     }
-    /* .logo {
-    } */
-  
-    .navbar-nav {
-      flex-direction: row;
+    .SkillContainer{
+        display: flex;
+        flex-direction: column;
+        width:100% ;
+        justify-content: space-evenly;
+        margin: auto;   
     }
-  
-    .nav-link {
-      justify-content: center;
+    .joinbox{
+        width: 70%;
+        height:30vh;
+        margin: auto; 
+        padding-bottom: 10%; 
+    }
+    .FrontEndContainer{
+        height: 30vh;
+        width:50%;
+    }
+    .BackEndContainer{
+        height: 30vh;
+        width:50%;
+    }
+    .SkillBox{
+        height: 30vh;
+    }
+    .ProfessionalContainer{
+        height: 30vh;
+        width:50%;
+    }
+    .skillIcons{
+        margin-top: 20%;
+    }
+    .UlSkillBox{
+        text-align: left;
+        padding-top: 10%;
     }
 }

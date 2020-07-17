@@ -1,12 +1,19 @@
 .FooterContainer{
     width: 94.2vw;
-    height: 10vh;
+    height: 20vh;
     margin-left: 5rem;
     background-color: black;
 }
+.FooterContainer p{
+    color: white;
+    text-align: center;
+    background-color: black;
+}
 .FooterBox{
+    padding-top: 5%;
     width: 10%;
     margin: auto;
+    background-color: black;
 }
 .FooterIcon{
     width: 40px;
@@ -14,4 +21,18 @@
    margin-right: 15%;
    background-color: white;
    border-radius: 50px;
+}
+@media only screen and (max-width: 600px) {
+    .FooterContainer{
+        width:100%;
+        margin-left: 0rem;
+        height: 30vh;
+    }
+    .FooterBox{
+        width:35%;
+        margin: auto;
+    }
+    .FooterIcon{
+        width:30%
+    }
 }
