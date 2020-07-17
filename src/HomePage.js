@@ -1,6 +1,7 @@
 import React from 'react';
 import Hero from "./Componets/Hero/Hero";
 import NavBar from "./Componets/NavBar/NavBar";
+import AboutMe from "./Componets/AboutMe/AboutMe";
 import SkillSection from "./Componets/SkillSection/SkillSection";
 import ContactPage from "./Componets/Contact/Contact";
 import Footer from "./Componets/Footer/Footer";
@@ -11,6 +12,7 @@ function HomePage() {
     <div className="">
       <NavBar/>
       <Hero/>
+      <AboutMe/>
       <SkillSection/>
       <Personas/>
       <ContactPage/>

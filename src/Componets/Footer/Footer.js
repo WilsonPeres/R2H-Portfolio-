@@ -16,6 +16,7 @@ function Footer() {
        
         </div>
         <p> &copy; 2020 WilsonProductions</p>
+        <p>Last Updated: 07/17/2020</p>
       </div>
     );
   }

@@ -41,9 +41,10 @@
     margin-top: 14%;
     margin-left: 10%;
     text-align: left;
-    font-size: 20px;
+    font-size: 18px;
     color: black;
     width:80%;
+    scroll-behavior: auto;
 }
 .PersonaIMG{
     height: 23vh;
