@@ -31,8 +31,8 @@ class PortfolioBody extends React.Component {
                         <h4>Languages</h4>
                         <p>HTML & CSS</p>
                     <div className="CardButtonBox">
-                        <a href="https://github.com/WilsonPeres/Gateway-Spain-Project" className="LaunchButton">GitHub</a>
-                        <a href="https://gracious-perlman-b1d404.netlify.app/" className="LaunchButton">WebSite</a>
+                        <a href="https://github.com/WilsonPeres/Gateway-Spain-Project" target="_blank" className="LaunchButton">GitHub</a>
+                        <a href="https://gracious-perlman-b1d404.netlify.app/" target="_blank" className="LaunchButton">WebSite</a>
                     </div>
 
                     </div>
@@ -50,8 +50,8 @@ class PortfolioBody extends React.Component {
                         <h4>Languages</h4>
                         <p>HTML CSS Javascript</p>
                     <div className="CardButtonBox">
-                        <a href="https://github.com/WilsonPeres/Clock" className="LaunchButton">GitHub</a>
-                        <a href="https://sharp-ptolemy-c041dc.netlify.app/" className="LaunchButton">WebSite</a>
+                        <a href="https://github.com/WilsonPeres/Clock" target="_blank" className="LaunchButton">GitHub</a>
+                        <a href="https://sharp-ptolemy-c041dc.netlify.app/" target="_blank" className="LaunchButton">WebSite</a>
                     </div>
 
                     </div>
@@ -69,8 +69,8 @@ class PortfolioBody extends React.Component {
                         <h4>Languages</h4>
                         <p>HTML CSS Javascript</p>
                     <div className="CardButtonBox">
-                        <a href="https://github.com/WilsonPeres/Speech-recognization-app" className="LaunchButton">GitHub</a>
-                        <a href="https://determined-mahavira-dbc4a2.netlify.app/" className="LaunchButton">WebSite</a>
+                        <a href="https://github.com/WilsonPeres/Speech-recognization-app" target="_blank" className="LaunchButton">GitHub</a>
+                        <a href="https://determined-mahavira-dbc4a2.netlify.app/" target="_blank" className="LaunchButton">WebSite</a>
                     </div>
 
                     </div>
@@ -88,8 +88,8 @@ class PortfolioBody extends React.Component {
                         <h4>Languages</h4>
                         <p>HTML CSS  Javascript</p>
                     <div className="CardButtonBox">
-                        <a href="https://github.com/WilsonPeres/Tic-Tac-Toe-Game" className="LaunchButton">GitHub</a>
-                        <a href="https://wilsonptictactoegame.netlify.app/" className="LaunchButton">WebSite</a>
+                        <a href="https://github.com/WilsonPeres/Tic-Tac-Toe-Game" target="_blank" className="LaunchButton">GitHub</a>
+                        <a href="https://wilsonptictactoegame.netlify.app/" target="_blank" className="LaunchButton">WebSite</a>
                     </div>
 
                     </div>
@@ -107,8 +107,8 @@ class PortfolioBody extends React.Component {
                         <h4>Languages</h4>
                         <p>React CSS Javascript</p>
                     <div className="CardButtonBox">
-                        <a href="https://github.com/WilsonPeres/ReactEcommerceProject" className="LaunchButton">GitHub</a>
-                        <a href="https://ellaguneroclt.netlify.app/" className="LaunchButton">WebSite</a>
+                        <a href="https://github.com/WilsonPeres/ReactEcommerceProject" target="_blank" className="LaunchButton">GitHub</a>
+                        <a href="https://ellaguneroclt.netlify.app/" target="_blank" className="LaunchButton">WebSite</a>
                     </div>
 
                     </div>
@@ -124,12 +124,11 @@ class PortfolioBody extends React.Component {
                     <div className="CardInfo">
                         <h2>Github Card Finder</h2>
                         <h4>Languages</h4>
-                        <p>Node.JS & CSS</p>
+                        <p>Json Ajax & CSS</p>
                     <div className="CardButtonBox">
-                        <a href="https://github.com/WilsonPeres/ReactEcommerceProject" className="LaunchButton">GitHub</a>
-                        <a href="https://ellaguneroclt.netlify.app/" className="LaunchButton">WebSite</a>
+                        <a href="https://github.com/WilsonPeres/React-github-cards" target="_blank" className="LaunchButton">GitHub</a>
+                        <a href="https://myfirstgithubprofileapp.netlify.app/" target="_blank" className="LaunchButton">WebSite</a>
                     </div>
-
                     </div>
                     <div className="CardIMG">
                         <img src="/images/GithubCard.png"/>
@@ -145,8 +144,8 @@ class PortfolioBody extends React.Component {
                         <h4>Languages</h4>
                         <p>React MySQL Node.JS CSS</p>
                     <div className="CardButtonBox">
-                        <a href="https://github.com/LeCoding-tech/Redesign-team-9" className="LaunchButton">GitHub</a>
-                        <a href="https://redesign-team-9.netlify.app/" className="LaunchButton">WebSite</a>
+                        <a href="https://github.com/LeCoding-tech/Redesign-team-9" target="_blank" className="LaunchButton">GitHub</a>
+                        <a href="https://redesign-team-9.netlify.app/" target="_blank" className="LaunchButton">WebSite</a>
                     </div>
                     </div>
                     <div className="CardIMG">
@@ -163,8 +162,8 @@ class PortfolioBody extends React.Component {
                         <h4>Languages</h4>
                         <p> Html CSS Javascript</p>
                     <div className="CardButtonBox">
-                        <a href="https://github.com/WilsonPeres/Challange-" className="LaunchButton">GitHub</a>
-                        <a href="https://angry-hodgkin-76926e.netlify.app/" className="LaunchButton">WebSite</a>
+                        <a href="https://github.com/WilsonPeres/Challange-" target="_blank" className="LaunchButton">GitHub</a>
+                        <a href="https://angry-hodgkin-76926e.netlify.app/" target="_blank" className="LaunchButton">WebSite</a>
                     </div>
                     </div>
                     <div className="CardIMG">
@@ -175,6 +174,23 @@ class PortfolioBody extends React.Component {
 
 
             <div className="CardMaincontainer">
+                <div className="IMGInfoContainer">
+                    <div className="CardInfo">
+                        <h2>Weather App</h2>
+                        <h4>Languages</h4>
+                        <p> Node Express & CSS</p>
+                    <div className="CardButtonBox">
+                        <a href="https://github.com/WilsonPeres/NodeWeatherAppWilson" target="_blank" className="LaunchButton">GitHub</a>
+                    </div>
+                    </div>
+                    <div className="CardIMG">
+                        <img src="/images/WeatherNode.png"/>
+                    </div>
+                </div>
+            </div>
+
+
+            {/* <div className="CardMaincontainer">
                 <div className="IMGInfoContainer">
                     <div className="CardInfo">
                         <h2> Weather App</h2>
@@ -192,7 +208,7 @@ class PortfolioBody extends React.Component {
                         </Slider>
                     </div>
                 </div>
-            </div>
+            </div> */}
 
 
             <div className="CardMaincontainer">
